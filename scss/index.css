@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: normal;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,8 +10,8 @@ body {
 }
 
 a {
-  text-decoration: none !important;
-  list-style-type: none !important;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 ul {
