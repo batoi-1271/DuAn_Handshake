@@ -1,0 +1,34 @@
+header{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    padding: 3vh 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    .navbar_menu{
+        width: 33%;
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                margin: 0 20px;
+            }
+        }
+    }
+    .navbar_logo{
+        width: 33%;
+    }
+    .navbar_social{
+        width: 33%;
+        ul{
+            display: flex;
+            li{
+                margin: 0 10px;
+                font-size: 20px;
+            }
+        }
+    }
+}

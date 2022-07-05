@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Updock&family=Water+Brush&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -6,10 +7,12 @@
 
 body {
   font-size: 1rem;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
 }
 
 a {
+  color: black;
   text-decoration: none;
   list-style-type: none;
 }
@@ -22,4 +25,68 @@ ul {
 
 p {
   font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+header .navbar {
+  padding: 3vh 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+header .navbar .navbar_menu {
+  width: 33%;
+  justify-content: flex-start;
+}
+header .navbar .navbar_menu ul {
+  display: flex;
+  align-items: center;
+}
+header .navbar .navbar_menu ul li {
+  margin: 0 20px;
+}
+header .navbar .navbar_menu ul li a {
+  font-weight: 900;
+}
+header .navbar .navbar_logo {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar .navbar_social {
+  width: 33%;
+  justify-content: flex-end;
+  display: inline-flex;
+}
+header .navbar .navbar_social ul {
+  display: flex;
+}
+header .navbar .navbar_social ul li {
+  margin: 0 10px;
+  font-size: 20px;
+}
+header .banner {
+  margin: 74px 94px;
+}
+header .banner .banner_heading {
+  font-size: 100px;
+  text-align: center;
+  z-index: 99009;
+}
+header .banner .banner_heading h1 {
+  line-height: 160px;
+  font-weight: bold;
+}
+header .banner .banner_img {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .banner .banner_img .image-wrapper {
+  background-image: url(/img/banner.jpg);
 }/*# sourceMappingURL=index.css.map */

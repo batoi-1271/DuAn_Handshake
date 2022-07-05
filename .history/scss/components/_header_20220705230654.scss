@@ -40,6 +40,7 @@ header{
         }
     }
     .banner{
+        position: relative;
         .banner_heading{
             font-size: 100px;
             text-align: center;
@@ -51,6 +52,8 @@ header{
         }
         margin: 74px 94px;
         .banner_img{
+            position: absolute;
+            margin-top: -100px;
             text-transform: uppercase;
             display: flex;
             justify-content: space-between;

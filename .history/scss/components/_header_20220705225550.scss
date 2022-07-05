@@ -43,24 +43,21 @@ header{
         .banner_heading{
             font-size: 100px;
             text-align: center;
-            z-index: 99009;
             h1{
+                
                 line-height: 160px;
                 font-weight: bold;
+                z-index: 999;
             }
         }
         margin: 74px 94px;
         .banner_img{
+            margin-top: -100px;
             text-transform: uppercase;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .image-wrapper{
-                background-image: url(/img/banner.jpg);
-            }
-
         }
 
     }
-    
 }

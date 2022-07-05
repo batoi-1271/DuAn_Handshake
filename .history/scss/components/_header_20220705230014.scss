@@ -43,10 +43,16 @@ header{
         .banner_heading{
             font-size: 100px;
             text-align: center;
-            z-index: 99009;
+            
             h1{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                // top: 0;
                 line-height: 160px;
                 font-weight: bold;
+                z-index: 99009;
+
             }
         }
         margin: 74px 94px;
@@ -55,12 +61,8 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .image-wrapper{
-                background-image: url(/img/banner.jpg);
-            }
 
         }
 
     }
-    
 }
