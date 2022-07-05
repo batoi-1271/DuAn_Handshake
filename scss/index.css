@@ -69,13 +69,11 @@ header .navbar .navbar_social ul li {
   margin: 0 10px;
   font-size: 20px;
 }
-header .banner {
-  margin: 74px 94px;
-}
 header .banner .banner_heading {
+  margin: 74px 94px -60px;
   font-size: 100px;
   text-align: center;
-  z-index: 99009;
+  z-index: 999;
 }
 header .banner .banner_heading h1 {
   line-height: 160px;
@@ -88,5 +86,5 @@ header .banner .banner_img {
   align-items: center;
 }
 header .banner .banner_img .image-wrapper {
-  background-image: url(/img/banner.jpg);
+  z-index: -1;
 }/*# sourceMappingURL=index.css.map */
