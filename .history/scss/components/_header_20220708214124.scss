@@ -40,7 +40,29 @@ header{
         }
     }
     .banner{
-       
+        .banner_heading{
+            margin-top: 70px;
+            font-size: 100px;
+            text-align: center;
+            z-index: 99009;
+            h1{
+                line-height: 160px;
+                font-weight: bold;
+                margin-top: 70px;
+                overflow-y:hidden ;
+            }
+        }
+        margin: 74px 94px;
+        .banner_img{
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                margin-top: -90px;
+            }
+        }
+
     }
     
 }

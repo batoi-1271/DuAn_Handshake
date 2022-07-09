@@ -40,7 +40,29 @@ header{
         }
     }
     .banner{
-       
+        .banner_heading{
+            font-size: 100px;
+            text-align: center;
+            z-index: 99009;
+            h1{
+                line-height: 160px;
+                font-weight: bold;
+            }
+        }
+        margin: 74px 94px;
+        .banner_img{
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .image-wrapper{
+                background-image: url("https://images.unsplash.com/photo-1594948506928-2d4cad88d0af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+                width: 100px;
+                height: 100px;
+            }
+
+        }
+
     }
     
 }

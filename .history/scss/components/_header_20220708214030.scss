@@ -40,7 +40,31 @@ header{
         }
     }
     .banner{
-       
+        position: relative;
+        .banner_heading{
+            margin-top: 70px;
+            font-size: 100px;
+            text-align: center;
+            z-index: 99009;
+            h1{
+                position: absolute;
+                top: 0px;
+                line-height: 160px;
+                font-weight: bold;
+                margin-top: 70px;
+            }
+        }
+        margin: 74px 94px;
+        .banner_img{
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                margin-top: -90px;
+            }
+        }
+
     }
     
 }

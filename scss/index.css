@@ -86,7 +86,4 @@ header .banner .banner_img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header .banner .banner_img .image-wrapper {
-  background-image: url(/img/banner.jpg);
 }/*# sourceMappingURL=index.css.map */
