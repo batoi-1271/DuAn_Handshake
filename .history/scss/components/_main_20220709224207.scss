@@ -3,12 +3,9 @@ main{
 
 }
 
-.container{
-    margin: 0 auto;
-    width: 1078px;
-}
 .about{
-  
+   margin: 0 auto;
+    width: 1078px;
     .about_who-are{
         border-bottom: 1px solid #111;
        padding-bottom: 80px;
@@ -42,7 +39,6 @@ main{
             p{
                 letter-spacing: 1px;
                 font-size: 18px;
-                color: rgb(44, 43, 43);
             }
         }
         .about_work-button{
@@ -94,45 +90,6 @@ main{
                 font-size: 1rem;
                 font-weight: 700;
                 line-height: 25px;
-            }
-        }
-    }
-}
-
-.team{
-    .landingHouse-Team{
-        margin: 80px 0;
-        display: flex;
-        align-items: center;
-        color: #3a3b40;
-        .title{
-            width: 50%;
-            font-size: 100px;
-           
-            
-        }
-        .content{
-            width: 50%;
-            p{
-                font-size: 25px;
-                text-indent: 70px;
-            }
-        }
-    }
-}
-
-
-
-.accountManager{
-    display: flex;
-    justify-content: space-between;
-    .block-Manager{
-        width: 30%;
-
-        .block-img{
-            img{
-                width: 300px;
-                height: 300px;
             }
         }
     }

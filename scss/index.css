@@ -29,6 +29,7 @@ p {
 
 header {
   width: 100%;
+  margin-bottom: 74px;
 }
 header .navbar {
   padding: 4vh 3vw;
@@ -87,8 +88,6 @@ header .banner .banner_img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
-=======
 }
 header .banner .banner_img .image-wrapper {
   width: 46%;
@@ -114,6 +113,73 @@ header .banner .banner_img .banner-text {
 }
 header .banner .banner_img .banner-text p {
   text-align: end;
+}
+
+main {
+  margin: 98px 0 0 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1078px;
+}
+
+.about .about_who-are {
+  border-bottom: 1px solid #111;
+  padding-bottom: 80px;
+}
+.about .about_who-are .about_slogan {
+  position: relative;
+}
+.about .about_who-are .about_slogan .about_heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 17px 17px 17px 0;
+}
+.about .about_who-are .about_slogan .about_heading h2 {
+  font-size: 16px;
+  color: rgba(58, 59, 64, 0.51);
+}
+.about .about_who-are .about_slogan p {
+  font-size: 50px;
+  text-indent: 200px;
+  text-align: justify;
+}
+.about .about_work {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .about_work .about_work-text {
+  width: 50%;
+}
+.about .about_work .about_work-text p {
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: rgb(44, 43, 43);
+}
+.about .about_work .about_work-button {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.about .about_work .about_work-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .landingHouse {
@@ -143,5 +209,34 @@ header .banner .banner_img .banner-text p {
   font-size: 1rem;
   font-weight: 700;
   line-height: 25px;
->>>>>>> e1ab6d34b81bd984d558922c3ce5c5fc002cc3f2
+}
+
+.team .landingHouse-Team {
+  margin: 80px 0;
+  display: flex;
+  align-items: center;
+  color: #3a3b40;
+}
+.team .landingHouse-Team .title {
+  width: 50%;
+  font-size: 100px;
+}
+.team .landingHouse-Team .content {
+  width: 50%;
+}
+.team .landingHouse-Team .content p {
+  font-size: 25px;
+  text-indent: 70px;
+}
+
+.accountManager {
+  display: flex;
+  justify-content: space-between;
+}
+.accountManager .block-Manager {
+  width: 30%;
+}
+.accountManager .block-Manager .block-img img {
+  width: 300px;
+  height: 300px;
 }/*# sourceMappingURL=index.css.map */
