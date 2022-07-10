@@ -275,39 +275,31 @@ main {
                 justify-content: space-between;
                 .list-detail-left{
                     width: 45%;
-                    .left{
+                    .left-item{
+                        border-top: 1px solid rgb(193, 188, 188) ;
+                        padding: 15px 0;
+                        display: flex;
+                        font-size: 20px;
+                        i{
+                            margin-right: 10px;
+                        }
                     }
-                    
                 }
                 .list-detail-right{
                     width: 45%;
-                    .right{
-                        
+                    .right-item{
+                        border-top: 1px solid rgb(193, 188, 188) ;
+                        padding: 15px 0;
+                        display: flex;
+                        font-size: 20px;
+                        i{
+                            margin-right: 10px;
+                        }
                     }
-                    
                 }
 
             }
         }
 
     }
-}
-
-.item{
-    border-top: 1px solid rgb(193, 188, 188) ;
-    padding: 15px 0;
-    display: flex;
-    font-size: 20px;
-    i{
-        margin-right: 10px;
-    }
-}
-
-.list-item-content{
-    display: none;
-    padding: 15px 0;
-}
-.list-item-content.active{
-    display: block;
-    transition: all ease .3s;
 }

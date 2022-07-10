@@ -276,6 +276,8 @@ main {
                 .list-detail-left{
                     width: 45%;
                     .left{
+                        
+                        }
                     }
                     
                 }
@@ -301,13 +303,4 @@ main {
     i{
         margin-right: 10px;
     }
-}
-
-.list-item-content{
-    display: none;
-    padding: 15px 0;
-}
-.list-item-content.active{
-    display: block;
-    transition: all ease .3s;
 }
