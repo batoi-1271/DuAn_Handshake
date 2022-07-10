@@ -7,32 +7,34 @@ const itemsContent = $$(".list-item-content");
 const itemsRight = $$(".right-item");
 const itemsContentRight = $$(".list-item-content-Right");
 
-
 function start() {
-    itemsLeft.forEach((item, index) => {
-        const content = itemsContent[index];
-        console.log(content)
+  itemsLeft.forEach((item, index) => {
+    const content = itemsContent[index];
+    item.onclick = function () {
+      if (content.classList.contains("active")) {
+        content.classList.remove("active");
+      } else {
+        itemsContent.forEach((item, index) => {
+          item.classList.remove("active");
+        });
+        content.classList.add("active");
+      }
+    };
+  });
 
-        item.onclick = function() {
-            $('.list-item-content.active').classList.remove('active');
-            content.classList.add('active');
-            // if (content.classList.contains('active')) {
-            //     content.classList.remove('active')
-            // } else {
-            //     content.classList.add('active');
-            // }
-
-        }
-    })
-
-    itemsRight.forEach((item, index) => {
-        const content = itemsContentRight[index];
-        console.log(content)
-
-        item.onclick = function() {
-            content.classList.toggle('active');
-        }
-    })
+  itemsRight.forEach((item, index) => {
+    const content = itemsContentRight[index];
+    item.onclick = function () {
+        if (content.classList.contains("active")) {
+            content.classList.remove("active");
+          } else {
+            itemsContentRight.forEach((item, index) => {
+              item.classList.remove("active");
+            });
+            content.classList.add("active");
+          }
+    };
+  });
 }
 
 start();

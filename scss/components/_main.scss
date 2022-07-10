@@ -275,12 +275,16 @@ main {
                 justify-content: space-between;
                 .list-detail-left{
                     width: 45%;
+                    cursor: pointer;
+                    user-select: none;
                     .left{
                     }
                     
                 }
                 .list-detail-right{
                     width: 45%;
+                    cursor: pointer;
+                    user-select: none;
                     .right{
                         
                     }
@@ -311,3 +315,4 @@ main {
     display: block;
     transition: all ease .3s;
 }
+
