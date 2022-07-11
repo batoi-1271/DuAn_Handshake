@@ -1,1 +1,0 @@
-const items = document.querySelectorAll("right-item")\

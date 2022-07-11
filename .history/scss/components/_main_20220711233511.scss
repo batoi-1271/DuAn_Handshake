@@ -326,10 +326,6 @@ main {
                 display: flex;
                 // flex-direction: column;
                 align-items: flex-start;
-                .contact-content-detail{
-                    background-color: aqua;
-                    flex: 1;
-                }
                 h4{
                     font-size:25px;
                     padding-bottom: 50px;
@@ -340,9 +336,7 @@ main {
                    
                 }
                 .contact-button{
-                    display: flex;
                     align-self: flex-end;
-                    background-color: aquamarine;
                     a{
                         @include button-a;
                         background-color: white;

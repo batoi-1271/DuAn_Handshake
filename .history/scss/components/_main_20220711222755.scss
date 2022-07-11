@@ -60,7 +60,16 @@ main {
             align-items: center;
 
             a {
-                @include button-a;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 170px;
+                height: 170px;
+                background-color: black;
+                color: aliceblue;
+                border-radius: 50%;
+                font-size: 20px;
+                font-weight: 600;
             }
         }
     }
@@ -227,7 +236,6 @@ main {
             }
         }
     }
-    
 
     .introduce {
         width: 100%;
@@ -295,63 +303,12 @@ main {
 
             }
         }
-        
-
-    }
-    .contact{
-        width: 1200px;
-        margin: 0 auto;
-        padding-bottom: 80px ;
-        .contact-info{
-            h1{
-                font-size:150px;
-                color: white;
-            }
-        }
-        .block-contact{
+        .contact{
+            width: 1200px;
             display: flex;
-            justify-content: space-between;
-            .contact-img{
-                width: 45%;
-                img{
-                    width: 100%;
-                    height: 600px;
-                    object-fit: cover;
-                    border-radius: 20px;
-                }
-            }
-            .contact-content{
-                width: 50%;
-                color: #fff;
-                display: flex;
-                // flex-direction: column;
-                align-items: flex-start;
-                .contact-content-detail{
-                    background-color: aqua;
-                    flex: 1;
-                }
-                h4{
-                    font-size:25px;
-                    padding-bottom: 50px;
-                    border-bottom: 1px solid white;
-                }
-                p{
-                    // padding: 50px 0 145px 0;
-                   
-                }
-                .contact-button{
-                    display: flex;
-                    align-self: flex-end;
-                    background-color: aquamarine;
-                    a{
-                        @include button-a;
-                        background-color: white;
-                        color: black;
-                    }
-                }
-            }
-            
+            margin: 0 auto;
         }
+
     }
 }
 
@@ -381,11 +338,11 @@ main {
 @keyframes movedDown {
   from{
     opacity: 0;
-   transform: translateY(-20%);
+//    transform: translateY(-20%);
 
   }
   to{
     opacity: 1;
-    transform: translateY(0);
+    // transform: translateY(0);
   }
 }

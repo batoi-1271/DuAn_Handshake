@@ -301,7 +301,6 @@ main {
     .contact{
         width: 1200px;
         margin: 0 auto;
-        padding-bottom: 80px ;
         .contact-info{
             h1{
                 font-size:150px;
@@ -323,26 +322,15 @@ main {
             .contact-content{
                 width: 50%;
                 color: #fff;
-                display: flex;
-                // flex-direction: column;
-                align-items: flex-start;
-                .contact-content-detail{
-                    background-color: aqua;
-                    flex: 1;
-                }
                 h4{
                     font-size:25px;
                     padding-bottom: 50px;
-                    border-bottom: 1px solid white;
+                    border-bottom: 1px solid red;
                 }
                 p{
-                    // padding: 50px 0 145px 0;
-                   
+                    padding: 50px 0 60px 0;
                 }
                 .contact-button{
-                    display: flex;
-                    align-self: flex-end;
-                    background-color: aquamarine;
                     a{
                         @include button-a;
                         background-color: white;
