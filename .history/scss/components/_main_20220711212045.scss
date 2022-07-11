@@ -257,7 +257,6 @@ main {
             height: auto;
             margin: 100px auto;
             padding: 20px 150px;
-            border-radius: 30px;
             .detail-describe{
                 width: 900px;
                 margin: 50px auto 20px;
@@ -278,12 +277,8 @@ main {
                     width: 45%;
                     cursor: pointer;
                     user-select: none;
-                    margin-bottom: auto; // khóa
                     .left{
                         flex-shrink: 0;
-                        .left-item{
-                            flex-shrink: 0;
-                        }
                     }
                     
                 }
@@ -291,7 +286,6 @@ main {
                     width: 45%;
                     cursor: pointer;
                     user-select: none;
-                    margin-bottom: auto;  // khóa 
                     .right{
                         flex-shrink: 0;
                         .right-item{
@@ -312,7 +306,6 @@ main {
     padding: 15px 0;
     display: flex;
     font-size: 20px;
-    flex-shrink: 0;
     i{
         margin-right: 10px;
     }
@@ -321,23 +314,22 @@ main {
 .list-item-content{
     display: none;
     padding: 15px 0;
-    height: 0;
 }
 .list-item-content.active{
     display: block;
-    animation: movedDown ease 1.2s;
-    height: 100px;
+    transition: all ease .3s;
+    animation: movedDown ease 8s;
 }
 
 
 @keyframes movedDown {
   from{
     opacity: 0;
-//    transform: translateY(-20%);
+    color: #111;
 
   }
   to{
     opacity: 1;
-    // transform: translateY(0);
+    color: antiquewhite;
   }
 }

@@ -257,7 +257,6 @@ main {
             height: auto;
             margin: 100px auto;
             padding: 20px 150px;
-            border-radius: 30px;
             .detail-describe{
                 width: 900px;
                 margin: 50px auto 20px;
@@ -278,7 +277,7 @@ main {
                     width: 45%;
                     cursor: pointer;
                     user-select: none;
-                    margin-bottom: auto; // khóa
+                    margin-bottom: auto;
                     .left{
                         flex-shrink: 0;
                         .left-item{
@@ -291,7 +290,7 @@ main {
                     width: 45%;
                     cursor: pointer;
                     user-select: none;
-                    margin-bottom: auto;  // khóa 
+                    margin-bottom: auto;
                     .right{
                         flex-shrink: 0;
                         .right-item{
@@ -325,7 +324,7 @@ main {
 }
 .list-item-content.active{
     display: block;
-    animation: movedDown ease 1.2s;
+    animation: movedDown ease 1s;
     height: 100px;
 }
 

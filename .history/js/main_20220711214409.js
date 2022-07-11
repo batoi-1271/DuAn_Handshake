@@ -10,7 +10,7 @@ const itemsContentRight = $$(".list-item-content-Right");
 function start() {
   itemsLeft.forEach((item, index) => {
     const content = itemsContent[index];
-  
+    console.log(item.offsetTop)
     item.onclick = function () {
       if (content.classList.contains("active")) {
         content.classList.remove("active");
@@ -20,7 +20,7 @@ function start() {
         
         });
         content.classList.add("active");
-       
+        item.style.top = item.offsetTop + "px";
       }
     };
   });

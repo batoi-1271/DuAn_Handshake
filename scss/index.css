@@ -326,6 +326,7 @@ main {
   height: auto;
   margin: 100px auto;
   padding: 20px 150px;
+  border-radius: 30px;
 }
 .ourWork .introduce .introduce-detail .detail-describe {
   width: 900px;
@@ -351,6 +352,13 @@ main {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-bottom: auto;
+}
+.ourWork .introduce .introduce-detail .list-detail .list-detail-left .left {
+  flex-shrink: 0;
+}
+.ourWork .introduce .introduce-detail .list-detail .list-detail-left .left .left-item {
+  flex-shrink: 0;
 }
 .ourWork .introduce .introduce-detail .list-detail .list-detail-right {
   width: 45%;
@@ -359,12 +367,21 @@ main {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-bottom: auto;
 }
+.ourWork .introduce .introduce-detail .list-detail .list-detail-right .right {
+  flex-shrink: 0;
+}
+.ourWork .introduce .introduce-detail .list-detail .list-detail-right .right .right-item {
+  flex-shrink: 0;
+}
+
 .item {
   border-top: 1px solid rgb(193, 188, 188);
   padding: 15px 0;
   display: flex;
   font-size: 20px;
+  flex-shrink: 0;
 }
 .item i {
   margin-right: 10px;
@@ -373,9 +390,30 @@ main {
 .list-item-content {
   display: none;
   padding: 15px 0;
+  height: 0;
 }
 
 .list-item-content.active {
   display: block;
-  transition: all ease 0.3s;
+  -webkit-animation: movedDown ease 1.2s;
+          animation: movedDown ease 1.2s;
+  height: 100px;
+}
+
+@-webkit-keyframes movedDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes movedDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -20,7 +20,7 @@ function start() {
         
         });
         content.classList.add("active");
-       
+        item.style.top = item.offsetTop + "10px";
       }
     };
   });

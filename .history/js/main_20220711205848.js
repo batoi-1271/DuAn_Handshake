@@ -10,17 +10,14 @@ const itemsContentRight = $$(".list-item-content-Right");
 function start() {
   itemsLeft.forEach((item, index) => {
     const content = itemsContent[index];
-  
     item.onclick = function () {
       if (content.classList.contains("active")) {
         content.classList.remove("active");
       } else {
         itemsContent.forEach((item) => {
           item.classList.remove("active");
-        
         });
         content.classList.add("active");
-       
       }
     };
   });
