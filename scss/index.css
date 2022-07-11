@@ -27,8 +27,57 @@ p {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+main {
+  margin: 98px 0 0 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .mr-90 {
   margin: 90px 0;
+}
+
+.item {
+  border-top: 1px solid rgb(193, 188, 188);
+  padding: 15px 0;
+  display: flex;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.item i {
+  margin-right: 10px;
+}
+
+.list-item-content {
+  display: none;
+  padding: 15px 0;
+  height: 0;
+}
+
+.list-item-content.active {
+  display: block;
+  -webkit-animation: movedDown ease 1.2s;
+          animation: movedDown ease 1.2s;
+  height: 100px;
+}
+
+.detail {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  width: 1200px;
+  height: 45px;
+  background-color: rgba(192, 192, 192, 0.3);
+  transform: translateX(-50%);
+}
+.detail p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 25px;
 }
 
 header {
@@ -119,22 +168,13 @@ header .banner .banner_img .banner-text p {
   text-align: end;
 }
 
-main {
-  margin: 98px 0 0 0;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1200px;
-}
-
 .slogan {
   position: relative;
 }
 .slogan .slogan_heading {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -156,8 +196,8 @@ main {
 }
 .about .about_work {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .about .about_work .about_work-text {
   width: 50%;
@@ -170,8 +210,8 @@ main {
 .about .about_work .about_work-button {
   width: 50%;
   display: flex;
-  justify-content: end;
   align-items: center;
+  justify-content: end;
 }
 .about .about_work .about_work-button a {
   display: flex;
@@ -184,22 +224,6 @@ main {
   border-radius: 50%;
   font-size: 20px;
   font-weight: 600;
-}
-
-.detail {
-  position: absolute;
-  width: 1200px;
-  height: 45px;
-  background-color: rgba(192, 192, 192, 0.3);
-  left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%);
-}
-.detail p {
-  color: white;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 25px;
 }
 
 .landingHouse {
@@ -266,8 +290,8 @@ main {
 }
 .accountManager .block-Manager .name {
   color: #3a3b40;
-  font-size: 1.5rem;
   margin: 1rem 0;
+  font-size: 1.5rem;
 }
 .accountManager .block-Manager .name h3 {
   letter-spacing: 2px;
@@ -320,11 +344,17 @@ main {
   background-position: center;
   background-size: cover;
 }
+.ourWork .introduce .block-ImgIntroduce .detail {
+  bottom: 100px;
+}
 .ourWork .introduce .introduce-detail {
+  position: relative;
   background-color: #fff;
   width: 1200px;
   height: auto;
   margin: 100px auto;
+  margin-top: -60px;
+  z-index: 999;
   padding: 20px 150px;
   border-radius: 30px;
 }
@@ -376,8 +406,6 @@ main {
   flex-shrink: 0;
 }
 .ourWork .contact {
-  width: 1200px;
-  margin: 0 auto;
   padding-bottom: 80px;
 }
 .ourWork .contact .contact-info h1 {
@@ -402,21 +430,19 @@ main {
   width: 50%;
   color: #fff;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.ourWork .contact .block-contact .contact-content .contact-content-detail {
-  background-color: aqua;
-  flex: 1;
-}
-.ourWork .contact .block-contact .contact-content h4 {
+.ourWork .contact .block-contact .contact-content .contact-content-detail h4 {
   font-size: 25px;
   padding-bottom: 50px;
   border-bottom: 1px solid white;
 }
-.ourWork .contact .block-contact .contact-content .contact-button {
-  display: flex;
-  align-self: flex-end;
-  background-color: aquamarine;
+.ourWork .contact .block-contact .contact-content .contact-content-detail p {
+  padding: 50px 0;
+  line-height: 22px;
+  text-indent: 100px;
+  text-align: justify;
 }
 .ourWork .contact .block-contact .contact-content .contact-button a {
   display: flex;
@@ -431,30 +457,6 @@ main {
   font-weight: 600;
   background-color: white;
   color: black;
-}
-
-.item {
-  border-top: 1px solid rgb(193, 188, 188);
-  padding: 15px 0;
-  display: flex;
-  font-size: 20px;
-  flex-shrink: 0;
-}
-.item i {
-  margin-right: 10px;
-}
-
-.list-item-content {
-  display: none;
-  padding: 15px 0;
-  height: 0;
-}
-
-.list-item-content.active {
-  display: block;
-  -webkit-animation: movedDown ease 1.2s;
-          animation: movedDown ease 1.2s;
-  height: 100px;
 }
 
 @-webkit-keyframes movedDown {
