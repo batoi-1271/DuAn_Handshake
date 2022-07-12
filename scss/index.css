@@ -479,4 +479,58 @@ header .banner .banner_img .banner-text p {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.footer {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  display: flex;
+}
+.footer__left {
+  width: 50%;
+}
+.footer__left .footer__logo {
+  width: 80%;
+  margin-bottom: 1rem;
+}
+.footer__left .footer__logo h2 {
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+.footer__left .footer__logo p {
+  line-height: 28px;
+  font-size: 1.2rem;
+}
+.footer__left .footer__form {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left .footer__form input {
+  height: 50px;
+  width: 70%;
+  outline: none;
+  border-radius: 30px;
+  font-size: 18px;
+  padding-left: 15px;
+  border: 1px solid black;
+}
+.footer__left .footer__form button {
+  height: 50px;
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.footer__right {
+  width: 50%;
+  display: flex;
+}
+.footer__right .footer__contactUs {
+  margin: 30px auto 0;
+}
+.footer__right .footer__contactUs .footer__contact {
+  margin-bottom: 20px;
+}
+.footer__right .footer__contactUs .footer__contact h4 {
+  color: gray;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,17 @@
+.footer{
+    // margin:90px 0;
+    display: flex;
+    &__left{
+        width: 50%;
+        h2{
+            font-size: 28px;
+        }
+    }
+    &__right{
+        width: 50%;
+        display: flex;
+        .footer__contactUs{
+            margin: 0 auto;
+        }
+    }
+}
