@@ -1,0 +1,16 @@
+{
+    "introduce-list": [
+        { 
+            "id": 1, 
+            "name": "Land Mapping", 
+            "description": "This is a semi-thorough description of what this service entails, how it's accomplished, what clients can expect, and how long it might take."
+        }
+    ],
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
