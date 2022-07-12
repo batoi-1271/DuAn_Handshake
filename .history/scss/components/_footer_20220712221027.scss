@@ -1,0 +1,36 @@
+.footer{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+    &__left{
+        width: 50%;
+        .footer__logo{
+            width: 80%;
+            margin-bottom: 2rem;
+            h2{
+                font-size: 50px;
+                margin-bottom: 2rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+        .footer__form{
+            width: 80%;
+            input{
+                height: 50px;
+                width: 55%;
+                outline: none;
+                border-radius: 20px;
+                font-size: 25px;
+                padding-left: 20px;
+            }
+        }
+       
+    }
+    &__right{
+        width: 50%;
+        display: flex;
+        
+    }
+}
