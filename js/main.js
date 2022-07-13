@@ -7,7 +7,6 @@ const itemsContent = aa(".list-item-content");
 const itemsRight = aa(".right-item");
 const itemsContentRight = aa(".list-item-content-Right");
 
-const accountManager = a('.accountManager');
 
 function start() {
   itemsLeft.forEach((item, index) => {
@@ -45,6 +44,7 @@ function start() {
 }
 
 var managerApi = 'http://localhost:3000/manager';
+const accountManager = a('.accountManager');
 
 function getManager(callback) {
   fetch(managerApi)
