@@ -188,7 +188,48 @@
             }
         }
     }
-    
+    .slide-products {
+        padding: 90px 0;
+        .block-Slider {
+            width: 320px;
+            overflow: hidden;
+            // box-shadow: 2px 20px 30px rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            .slide-img {
+                height: 460px;
+                
+                img {
+            border-radius: 10px;
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-sizing: border-box;
+                }
+            }
+            .detail-block {
+                width: 100%;
+                display: flex;
+                color: white;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 5px;
+                .info {
+                    a {
+                        font-size: 25px;
+                        color: white;
+                        font-weight: 600;
+                        letter-spacing: 0.6px;
+                    }
+                }
+                .year {
+                    font-size: 15px;
+                    font-family: calibri;
+                    color: #ccc;
+                }
+            }
+        }
+    }
 
     .introduce {
         width: 100%;

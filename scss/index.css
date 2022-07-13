@@ -332,6 +332,44 @@ header .banner .banner_img .banner-text p {
 .ourWork_Content .ourWork_slogan p {
   color: white;
 }
+.ourWork .slide-products {
+  padding: 90px 0;
+}
+.ourWork .slide-products .block-Slider {
+  width: 320px;
+  overflow: hidden;
+  margin: 20px;
+}
+.ourWork .slide-products .block-Slider .slide-img {
+  height: 460px;
+}
+.ourWork .slide-products .block-Slider .slide-img img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-sizing: border-box;
+}
+.ourWork .slide-products .block-Slider .detail-block {
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+.ourWork .slide-products .block-Slider .detail-block .info a {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+.ourWork .slide-products .block-Slider .detail-block .year {
+  font-size: 15px;
+  font-family: calibri;
+  color: #ccc;
+}
 .ourWork .introduce {
   width: 100%;
   background-color: #1c1c20;
