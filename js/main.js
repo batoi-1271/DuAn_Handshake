@@ -40,45 +40,8 @@ function start() {
     };
   });
 
-  getManager(renderManager);
 }
 
-var managerApi = 'http://localhost:3000/manager';
-const accountManager = a('.accountManager');
-
-function getManager(callback) {
-  fetch(managerApi)
-    .then(response => response.json())
-    .then(callback)
-}
-function renderManager(managers) {
-  const htmls = managers.map((manager, index) => {
-    return `
-    <div class="block-Manager">
-    <div class="block-img">
-        <img src="${manager.avatar}" alt="">
-    </div>
-    <div class="responsibility">
-        <h4>${manager.responsibility}</h4>
-    </div>
-    <div class="name">
-        <h3>${manager.name}e</h3>
-    </div>
-    <div class="describe">
-        <p>${manager.describe}</p>
-    </div>
-    <div class="social">
-        <ul>
-            <li><a href="#">IG</a></li>
-            <li><a href="#">TW</a></li>
-            <li><a href="#">LI</a></li>
-        </ul>
-    </div>
-</div>
-    `;
-  });
-  accountManager.innerHTML = htmls.join("");
-}
 
 start();
 
