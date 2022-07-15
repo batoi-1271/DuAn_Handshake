@@ -25,7 +25,7 @@ userAction('manager')
                 <h4>${manager.responsibility}</h4>
             </div>
             <div class="name">
-                <h3>${manager.name}e</h3>
+                <h3>${manager.name}</h3>
             </div>
             <div class="describe">
                 <p>${manager.describe}</p>
