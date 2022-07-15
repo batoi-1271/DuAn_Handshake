@@ -4,6 +4,7 @@ const aa = document.querySelectorAll.bind(document);
 const itemsLeft = aa(".left-item");
 const itemsContent = aa(".list-item-content");
 
+console.log(itemsLeft)
 const itemsRight = aa(".right-item");
 const itemsContentRight = aa(".list-item-content-Right");
 
@@ -21,7 +22,6 @@ function start() {
 
         });
         content.classList.add("active");
-
       }
     };
   });
