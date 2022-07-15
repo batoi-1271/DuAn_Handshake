@@ -85,7 +85,7 @@ header {
   margin-bottom: 74px;
 }
 header .navbar {
-  padding: 4vh 3vw;
+  padding: 45px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,6 +103,7 @@ header .navbar .navbar_menu ul li {
   margin: 0 20px;
 }
 header .navbar .navbar_menu ul li a {
+  letter-spacing: 0.5px;
   font-weight: 900;
 }
 header .navbar .navbar_logo {
@@ -166,6 +167,32 @@ header .banner .banner_img .banner-text {
 }
 header .banner .banner_img .banner-text p {
   text-align: end;
+}
+
+.container_menu {
+  display: none !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .slogan {
@@ -571,4 +598,101 @@ header .banner .banner_img .banner-text p {
 }
 .footer__right .footer__contactUs .footer__contact h4 {
   color: gray;
+}
+
+@media (max-width: 740px) {
+  .navbar {
+    padding: 45px 0px !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar_menu {
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+    width: 100% !important;
+    max-width: 100%;
+    background-color: white;
+    display: none;
+  }
+  .navbar_menu ul {
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+  }
+  .navbar_menu ul li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+  }
+  .navbar_logo {
+    z-index: 999;
+  }
+  .navbar_social {
+    display: none !important;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    justify-content: center !important;
+    transform: translateX(-50%);
+  }
+  .navbar_social ul {
+    justify-content: center;
+  }
+  .navbar_social ul li {
+    margin-bottom: 20px !important;
+  }
+  .navbar_social ul li i {
+    font-size: 25px;
+  }
+  .navbar .container_menu {
+    display: block !important;
+    padding-right: 55px;
+    z-index: 10;
+  }
+}
+.modal_Menu {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  position: fixed;
+  inset: 0;
+}
+
+.responsiveMenu {
+  display: block !important;
+  -webkit-animation: slideIn ease-in 0.3s;
+          animation: slideIn ease-in 0.3s;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=index.css.map */

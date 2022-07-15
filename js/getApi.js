@@ -144,7 +144,7 @@ userAction('introduce-list-2')
                 <p>${list2.name}</p>
             </div>
             <div class="list-item-content list-item-content-Right">
-                <>${list2.description}
+                <p>${list2.description}
                 </p>
             </div>
         </div>
