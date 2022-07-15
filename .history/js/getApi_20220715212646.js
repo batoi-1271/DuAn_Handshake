@@ -56,7 +56,6 @@ userAction('introduce-list-2')
         }) 
         
         var listDetailRight = document.querySelector('.list-detail-right')
-        console.log(listDetailRight)
         listDetailRight.innerHTML = htmls.join('')
     })
     .catch(err => {
