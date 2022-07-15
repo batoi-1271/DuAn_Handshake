@@ -1,3 +1,4 @@
+
 const userAction = async (path) => {
     try {
         let response = await fetch(`http://localhost:3000/${path}`);
@@ -11,57 +12,8 @@ const userAction = async (path) => {
     }
 
 };
-
-
-
-// list-detail-left
-userAction('introduce-list-1')
-    .then(data => {
-        var htmls = data.map(list1 => {
-            return`<div class="left">
-            <div class="left-item item item">
-                <i class="fal fa-plus"></i>
-                <p>${list1.name}</p>
-            </div>
-            <div class="list-item-content">
-                <p>
-                ${list1.description}
-                </p>
-            </div>
-        </div>`
-        }) 
-        
-        var listDetailLeft = document.querySelector('.list-detail-left')
-        listDetailLeft.innerHTML = htmls.join('')
-    })
-
-    .catch(err => {
-        console.log(">>> Check error: " + err.message)
-    })
-
-// list-detail-right
-userAction('introduce-list-2')
-.then(data => {
-        var htmls = data.map(list2 => {
-            return`<div class="right ">
-            <div class="right-item item">
-                <i class="fal fa-plus"></i>
-                <p>${list2.name}</p>
-            </div>
-            <div class="list-item-content">
-                <>${list2.description}
-                </p>
-            </div>
-        </div>`
-        }) 
-        
-        var listDetailRight = document.querySelector('.list-detail-right')
-        console.log(listDetailRight)
-        listDetailRight.innerHTML = htmls.join('')
-    })
-    .catch(err => {
-        console.log(">>> Check error: " + err.message)
-    })
+const a = document.querySelector.bind(document);
+const aa = document.querySelectorAll.bind(document);
 
 
 
@@ -131,6 +83,99 @@ userAction('silder')
         console.log(">>> Check error: " + err.message)
     })
 
+
+
+// list-detail-left
+userAction('introduce-list-1')
+    .then(data => {
+        var htmls = data?.map(list1 => {
+            return `<div class="left">
+            <div class="left-item item item">
+                <i class="fal fa-plus"></i>
+                <p>${list1.name}</p>
+            </div>
+            <div class="list-item-content">
+                <p>
+                ${list1.description}
+                </p>
+            </div>
+        </div>`
+        })
+
+        var listDetailLeft = document.querySelector('.list-detail-left')
+        listDetailLeft.innerHTML = htmls.join('')
+
+        
+        const itemsLeft = aa(".left-item");
+        const itemsContent = aa(".list-item-content");
+        
+
+        console.log(itemsLeft, itemsContent)
+
+        itemsLeft.forEach((item, index) => {
+                const content = itemsContent[index];
+            
+                item.onclick = function () {
+                  if (content.classList.contains("active")) {
+                    content.classList.remove("active");
+                  } else {
+                    itemsContent.forEach((item) => {
+                      item.classList.remove("active");
+            
+                    });
+                    content.classList.add("active");
+                  }
+                };
+              });
+    })
+
+    .catch(err => {
+        console.log(">>> Check error: " + err.message)
+    })
+
+// list-detail-right
+userAction('introduce-list-2')
+    .then(data => {
+        var htmls = data.map(list2 => {
+            return `
+            <div class="right ">
+            <div class="right-item item">
+                <i class="fal fa-plus"></i>
+                <p>${list2.name}</p>
+            </div>
+            <div class="list-item-content list-item-content-Right">
+                <>${list2.description}
+                </p>
+            </div>
+        </div>
+        `;
+        });
+
+        var listDetailRight = document.querySelector('.list-detail-right')
+        listDetailRight.innerHTML = htmls.join('')
+
+        const itemsRight = aa(".right-item");
+        const itemsContentRight = aa(".list-item-content-Right");
+
+          itemsRight.forEach((item, index) => {
+    const content = itemsContentRight[index];
+    item.onclick = function () {
+      if (content.classList.contains("active")) {
+        content.classList.remove("active");
+      } else {
+        itemsContentRight.forEach((item) => {
+          item.classList.remove("active");
+        });
+        content.classList.add("active");
+      }
+    };
+  });
+
+       
+    })
+    .catch(err => {
+        console.log(">>> Check error: " + err.message)
+    })
 
 
 
