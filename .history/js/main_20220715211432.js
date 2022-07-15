@@ -6,8 +6,8 @@ const itemsContent = aa(".list-item-content");
 
 const itemsRight = aa(".right-item");
 const itemsContentRight = aa(".list-item-content-Right");
-// console.log(itemsLeft)
-console.log(itemsContentRight)
+console.log(itemsLeft)
+console.log(itemsContent)
 
 function start() {
   itemsLeft.forEach((item, index) => {

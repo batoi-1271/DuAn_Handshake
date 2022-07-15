@@ -18,7 +18,7 @@ const userAction = async (path) => {
 userAction('introduce-list-1')
     .then(data => {
         var htmls = data.map(list1 => {
-            return`<div class="left">
+            return`<div class="left item-${list1.id}">
             <div class="left-item item item">
                 <i class="fal fa-plus"></i>
                 <p>${list1.name}</p>
@@ -30,7 +30,7 @@ userAction('introduce-list-1')
             </div>
         </div>`
         }) 
-        
+        console.log(htmls)
         var listDetailLeft = document.querySelector('.list-detail-left')
         listDetailLeft.innerHTML = htmls.join('')
     })
@@ -39,29 +39,6 @@ userAction('introduce-list-1')
         console.log(">>> Check error: " + err.message)
     })
 
-// list-detail-right
-userAction('introduce-list-2')
-.then(data => {
-        var htmls = data.map(list2 => {
-            return`<div class="right ">
-            <div class="right-item item">
-                <i class="fal fa-plus"></i>
-                <p>${list2.name}</p>
-            </div>
-            <div class="list-item-content">
-                <>${list2.description}
-                </p>
-            </div>
-        </div>`
-        }) 
-        
-        var listDetailRight = document.querySelector('.list-detail-right')
-        console.log(listDetailRight)
-        listDetailRight.innerHTML = htmls.join('')
-    })
-    .catch(err => {
-        console.log(">>> Check error: " + err.message)
-    })
 
 
 
