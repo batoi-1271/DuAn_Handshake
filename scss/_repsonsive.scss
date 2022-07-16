@@ -1,4 +1,176 @@
+// Phone
+@media (min-width: 319px) and (max-width:739px) {
+    .navbar{
+        padding: 45px 0px !important;
+        display: flex;
+        justify-content: space-between;
+        &_menu{
+            position: absolute;
+            inset: 0;
+            height: 100vh;
+            width: 100% !important;
+            max-width: 100%;
+            background-color: white;
+            display: none;
+            transition: all ease .3s;
+            ul {
+                flex-direction: column;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) !important;
+                li {
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 35px;
+                }
+            }
+        }
+        &_logo {
+            z-index: 999;
+            padding-left: 20px !important;
+        }
+        &_social {
+            display: none !important;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            justify-content: center !important;
+            transform: translateX(-50%);
+            ul {
+                justify-content: center;
+                li {
+                    margin-bottom: 20px !important;
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
 
+        }
+        .container_menu {
+            display: block !important;
+            padding-right: 20px !important;
+            z-index: 10;
+        }
+    }
+    .banner {
+        padding-top: 70px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        &_heading {
+            margin: inherit !important;
+            h1 {
+                line-height: 65px !important;
+                font-size: 60px;
+            }
+        }
+        &_img {
+            .banner-scroll {
+                display: none;
+            }
+            .image-wrapper {
+                width: 100% !important;
+                .content-img {
+                    height: 500px !important;
+                }
+            }
+            .banner-text {
+                display: none !important;
+            }
+        }
+    }
+
+    .about {
+        &_who-are {
+            
+        }
+        &_work {
+            display: inherit !important;
+            .about_work-text {
+                width: 100% !important;
+                p {
+                    font-size: 16px !important;
+                }
+            }
+            .about_work-button {
+                margin-top: 50px !important;
+                justify-content: inherit !important;
+                a {
+                    width: 160px !important;
+                    height: 160px !important;
+                    font-size: 18px !important;
+                }
+            }
+        }
+    }
+    .container {
+        width: 90% !important;
+    }
+    .slogan {
+        .slogan_heading {
+            position: inherit;
+            margin-bottom: 20px;
+            h2 {
+                font-size: 13px !important;
+
+            }
+        }
+        p {
+            font-size: 28px !important;
+            text-indent: 50px;
+            // text-align: inherit;
+        }
+    }
+    .landingHouse {
+        height: 650px !important;
+        .landingHouse-content {
+            // width: 100%;
+            height: 100%;
+            position: relative;
+            background: {
+                image: url('/img/unsplash.jpg');
+                position: center;
+                size: fill;
+            }
+        }
+    }
+    .detail {
+        width: 90%;
+    }
+    .landingHouse-Team {
+        flex-direction: column;
+        align-items: inherit !important;
+        .title {
+            width: 100% !important;
+            font-size: 55px !important;
+            margin-bottom: 20px;
+        }
+        .content {
+            width: 100% !important;
+             p {
+                font-size: 20px !important;
+                line-height: 30px;
+             };
+
+        }
+    }
+
+    .accountManager {
+        flex-direction: column;
+        .block-Manager {
+            width: 100%;
+            margin-bottom: 50px;
+            &:last-child{
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+    
+} 
+
+// 
 @media (max-width: 740px){
     .navbar{
         padding: 45px 0px !important;
@@ -12,6 +184,7 @@
             max-width: 100%;
             background-color: white;
             display: none;
+            transition: all ease .3s;
             ul {
                 flex-direction: column;
                 position: relative;
@@ -56,6 +229,130 @@
     }
 }
 
+// Ipad - table
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar{
+        padding: 45px 0px !important;
+        display: flex;
+        justify-content: space-between;
+        &_menu{
+            position: absolute;
+            inset: 0;
+            height: 100vh;
+            width: 100% !important;
+            max-width: 100%;
+            background-color: white;
+            display: none;
+            transition: all ease .3s;
+            ul {
+                flex-direction: column;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) !important;
+                li {
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 35px;
+                }
+            }
+        }
+        &_logo {
+            z-index: 999;
+        }
+        &_social {
+            display: none !important;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            justify-content: center !important;
+            transform: translateX(-50%);
+            // background-color: white;
+            ul {
+                justify-content: center;
+                li {
+                    margin-bottom: 20px !important;
+                    i {
+                        font-size: 25px;
+                    }
+                }
+            }
+
+        }
+        .container_menu {
+            display: block !important;
+            padding-right: 55px;
+            z-index: 10;
+        }
+    }
+    .banner {
+        // padding: inherit !important;
+        padding-top: 85px !important;
+        &_heading {
+            margin: inherit !important;
+            h1 {
+                line-height: 100px !important;
+                font-size: 80px;
+            }
+        }
+        &_img {
+            .banner-scroll {
+                display: none;
+            }
+            .image-wrapper {
+                width: 100% !important;
+                .content-img {
+                }
+            }
+            .banner-text {
+                display: none !important;
+            }
+        }
+    }
+
+    .about {
+        &_who-are {
+            
+        }
+    }
+    .container {
+        width: 90% !important;
+    }
+    .slogan {
+        .slogan_heading {
+            position: inherit;
+            margin-bottom: 20px;
+            h2 {
+                font-size: 13px !important;
+            }
+        }
+        p {
+            font-size: 28px !important;
+            text-indent: 50px;
+            // text-align: inherit;
+        }
+    }
+    .detail {
+        width: 90%;
+    }
+    .landingHouse-Team {
+        flex-direction: column;
+        .title {
+            width: 100% !important;
+            font-size: 55px !important;
+            margin-bottom: 20px;
+        }
+        .content {
+            width: 100% !important;
+             p {
+                // font-size: 20px !important;
+                line-height: 30px;
+             };
+
+        }
+    }
+}
 .modal_Menu{
     height: 100vh;
     width: 100%;
@@ -69,7 +366,9 @@
     display: block !important;
     animation: slideIn ease-in .3s;
 }
-
+.fadeOut {
+    animation: fadeOut linear .3s;
+}
 @keyframes slideIn {
     from {
       opacity: 0;

@@ -600,6 +600,157 @@ header .banner .banner_img .banner-text p {
   color: gray;
 }
 
+@media (min-width: 319px) and (max-width: 739px) {
+  .navbar {
+    padding: 45px 0px !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar_menu {
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+    width: 100% !important;
+    max-width: 100%;
+    background-color: white;
+    display: none;
+    transition: all ease 0.3s;
+  }
+  .navbar_menu ul {
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+  }
+  .navbar_menu ul li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+  }
+  .navbar_logo {
+    z-index: 999;
+    padding-left: 20px !important;
+  }
+  .navbar_social {
+    display: none !important;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    justify-content: center !important;
+    transform: translateX(-50%);
+  }
+  .navbar_social ul {
+    justify-content: center;
+  }
+  .navbar_social ul li {
+    margin-bottom: 20px !important;
+  }
+  .navbar_social ul li i {
+    font-size: 25px;
+  }
+  .navbar .container_menu {
+    display: block !important;
+    padding-right: 20px !important;
+    z-index: 10;
+  }
+  .banner {
+    padding-top: 70px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .banner_heading {
+    margin: inherit !important;
+  }
+  .banner_heading h1 {
+    line-height: 65px !important;
+    font-size: 60px;
+  }
+  .banner_img .banner-scroll {
+    display: none;
+  }
+  .banner_img .image-wrapper {
+    width: 100% !important;
+  }
+  .banner_img .image-wrapper .content-img {
+    height: 500px !important;
+  }
+  .banner_img .banner-text {
+    display: none !important;
+  }
+  .about_work {
+    display: inherit !important;
+  }
+  .about_work .about_work-text {
+    width: 100% !important;
+  }
+  .about_work .about_work-text p {
+    font-size: 16px !important;
+  }
+  .about_work .about_work-button {
+    margin-top: 50px !important;
+    justify-content: inherit !important;
+  }
+  .about_work .about_work-button a {
+    width: 160px !important;
+    height: 160px !important;
+    font-size: 18px !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+  .slogan .slogan_heading {
+    position: inherit;
+    margin-bottom: 20px;
+  }
+  .slogan .slogan_heading h2 {
+    font-size: 13px !important;
+  }
+  .slogan p {
+    font-size: 28px !important;
+    text-indent: 50px;
+  }
+  .landingHouse {
+    height: 650px !important;
+  }
+  .landingHouse .landingHouse-content {
+    height: 100%;
+    position: relative;
+    background-image: url("/img/unsplash.jpg");
+    background-position: center;
+    background-size: fill;
+  }
+  .detail {
+    width: 90%;
+  }
+  .landingHouse-Team {
+    flex-direction: column;
+    align-items: inherit !important;
+  }
+  .landingHouse-Team .title {
+    width: 100% !important;
+    font-size: 55px !important;
+    margin-bottom: 20px;
+  }
+  .landingHouse-Team .content {
+    width: 100% !important;
+  }
+  .landingHouse-Team .content p {
+    font-size: 20px !important;
+    line-height: 30px;
+  }
+  .accountManager {
+    flex-direction: column;
+  }
+  .accountManager .block-Manager {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .accountManager .block-Manager:last-child {
+    margin-bottom: 0 !important;
+  }
+}
 @media (max-width: 740px) {
   .navbar {
     padding: 45px 0px !important;
@@ -614,6 +765,7 @@ header .banner .banner_img .banner-text p {
     max-width: 100%;
     background-color: white;
     display: none;
+    transition: all ease 0.3s;
   }
   .navbar_menu ul {
     flex-direction: column;
@@ -654,6 +806,111 @@ header .banner .banner_img .banner-text p {
     z-index: 10;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    padding: 45px 0px !important;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar_menu {
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+    width: 100% !important;
+    max-width: 100%;
+    background-color: white;
+    display: none;
+    transition: all ease 0.3s;
+  }
+  .navbar_menu ul {
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+  }
+  .navbar_menu ul li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+  }
+  .navbar_logo {
+    z-index: 999;
+  }
+  .navbar_social {
+    display: none !important;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    justify-content: center !important;
+    transform: translateX(-50%);
+  }
+  .navbar_social ul {
+    justify-content: center;
+  }
+  .navbar_social ul li {
+    margin-bottom: 20px !important;
+  }
+  .navbar_social ul li i {
+    font-size: 25px;
+  }
+  .navbar .container_menu {
+    display: block !important;
+    padding-right: 55px;
+    z-index: 10;
+  }
+  .banner {
+    padding-top: 85px !important;
+  }
+  .banner_heading {
+    margin: inherit !important;
+  }
+  .banner_heading h1 {
+    line-height: 100px !important;
+    font-size: 80px;
+  }
+  .banner_img .banner-scroll {
+    display: none;
+  }
+  .banner_img .image-wrapper {
+    width: 100% !important;
+  }
+  .banner_img .banner-text {
+    display: none !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+  .slogan .slogan_heading {
+    position: inherit;
+    margin-bottom: 20px;
+  }
+  .slogan .slogan_heading h2 {
+    font-size: 13px !important;
+  }
+  .slogan p {
+    font-size: 28px !important;
+    text-indent: 50px;
+  }
+  .detail {
+    width: 90%;
+  }
+  .landingHouse-Team {
+    flex-direction: column;
+  }
+  .landingHouse-Team .title {
+    width: 100% !important;
+    font-size: 55px !important;
+    margin-bottom: 20px;
+  }
+  .landingHouse-Team .content {
+    width: 100% !important;
+  }
+  .landingHouse-Team .content p {
+    line-height: 30px;
+  }
+}
 .modal_Menu {
   height: 100vh;
   width: 100%;
@@ -667,6 +924,11 @@ header .banner .banner_img .banner-text p {
   display: block !important;
   -webkit-animation: slideIn ease-in 0.3s;
           animation: slideIn ease-in 0.3s;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut linear 0.3s;
+          animation: fadeOut linear 0.3s;
 }
 
 @-webkit-keyframes slideIn {
