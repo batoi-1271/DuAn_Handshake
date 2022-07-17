@@ -167,7 +167,77 @@
             }
         }
     }
-    
+    .introduce {
+        &-detail {
+            width: 90% !important;
+            padding: 20px !important;
+            .detail-describe {
+                width: 100% !important;
+                h3 {
+                    text-indent: 80px !important;
+                    font-size: 20px !important;
+                }
+            }
+            .list-detail {
+                width: 100% !important;
+                flex-direction: column !important;
+                .list-detail-left {
+                    margin-bottom: 30px !important;
+                }
+                .list-detail-left, .list-detail-right {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .contact {
+        .contact-info {
+            margin-bottom: 20px;
+            h1 {
+                font-size: 70px !important;
+            }
+        }
+        .block-contact {
+            flex-direction: column;
+            .contact-img{
+                width: 100% !important;
+                margin-bottom: 30px;
+            }
+            .contact-content{
+                width: 100% !important;
+            }
+        }
+    }
+    .footer {
+        flex-direction: column;
+        &__left{
+            width: 100%;
+            .footer__logo{
+                width: 95%;
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 1.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                    line-height: 25px;
+                }
+            }
+            .footer__form {
+                display: block;
+                width: 100%;
+            }
+        }
+        &__right {
+            display: block !important;
+        }
+        
+    }
+    .footer__copyright {
+        p {
+            padding-bottom: 20px !important;
+        }
+    }
 } 
 
 // 
@@ -351,6 +421,62 @@
              };
 
         }
+    }
+    .accountManager {
+        .block-Manager {
+            .block-img {
+                // width: ;
+                img {
+                    height: 300px !important;
+                }
+            }
+            .name {
+                h3 {
+                    font-size: 1.4rem !important;
+                }
+            }
+        }
+    }
+    .introduce {
+        &-detail {
+            width: 90% !important;
+            padding: 20px !important;
+            .detail-describe {
+                width: 100% !important;
+                h3 {
+                    text-indent: 80px !important;
+                    font-size: 20px !important;
+                }
+            }
+            .list-detail {
+                width: 90% !important;
+            }
+        }
+    }
+    .footer {
+        flex-direction: column;
+        &__left{
+            width: 100%;
+            .footer__logo{
+                width: 95%;
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 1.5rem;
+                }
+                p {
+                    font-size: 1rem;
+                    line-height: 25px;
+                }
+            }
+            .footer__form {
+                display: block;
+                width: 100%;
+            }
+        }
+        &__right {
+            display: block !important;
+        }
+        
     }
 }
 .modal_Menu{

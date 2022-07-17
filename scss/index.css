@@ -582,9 +582,12 @@ header .banner .banner_img .banner-text p {
 .footer__left .footer__form button {
   height: 50px;
   width: 25%;
-  border: 1px solid black;
   border-radius: 30px;
   font-size: 18px;
+  background-color: #3a3b40;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .footer__right {
   width: 50%;
@@ -598,6 +601,10 @@ header .banner .banner_img .banner-text p {
 }
 .footer__right .footer__contactUs .footer__contact h4 {
   color: gray;
+}
+
+.footer__copyright p {
+  padding-bottom: 20px !important;
 }
 
 @media (min-width: 319px) and (max-width: 739px) {
@@ -749,6 +756,70 @@ header .banner .banner_img .banner-text p {
   }
   .accountManager .block-Manager:last-child {
     margin-bottom: 0 !important;
+  }
+  .introduce-detail {
+    width: 90% !important;
+    padding: 20px !important;
+  }
+  .introduce-detail .detail-describe {
+    width: 100% !important;
+  }
+  .introduce-detail .detail-describe h3 {
+    text-indent: 80px !important;
+    font-size: 20px !important;
+  }
+  .introduce-detail .list-detail {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  .introduce-detail .list-detail .list-detail-left {
+    margin-bottom: 30px !important;
+  }
+  .introduce-detail .list-detail .list-detail-left, .introduce-detail .list-detail .list-detail-right {
+    width: 100% !important;
+  }
+  .contact .contact-info {
+    margin-bottom: 20px;
+  }
+  .contact .contact-info h1 {
+    font-size: 70px !important;
+  }
+  .contact .block-contact {
+    flex-direction: column;
+  }
+  .contact .block-contact .contact-img {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  .contact .block-contact .contact-content {
+    width: 100% !important;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__left {
+    width: 100%;
+  }
+  .footer__left .footer__logo {
+    width: 95%;
+  }
+  .footer__left .footer__logo h2 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+  }
+  .footer__left .footer__logo p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .footer__left .footer__form {
+    display: block;
+    width: 100%;
+  }
+  .footer__right {
+    display: block !important;
+  }
+  .footer__copyright p {
+    padding-bottom: 20px !important;
   }
 }
 @media (max-width: 740px) {
@@ -909,6 +980,50 @@ header .banner .banner_img .banner-text p {
   }
   .landingHouse-Team .content p {
     line-height: 30px;
+  }
+  .accountManager .block-Manager .block-img img {
+    height: 300px !important;
+  }
+  .accountManager .block-Manager .name h3 {
+    font-size: 1.4rem !important;
+  }
+  .introduce-detail {
+    width: 90% !important;
+    padding: 20px !important;
+  }
+  .introduce-detail .detail-describe {
+    width: 100% !important;
+  }
+  .introduce-detail .detail-describe h3 {
+    text-indent: 80px !important;
+    font-size: 20px !important;
+  }
+  .introduce-detail .list-detail {
+    width: 90% !important;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__left {
+    width: 100%;
+  }
+  .footer__left .footer__logo {
+    width: 95%;
+  }
+  .footer__left .footer__logo h2 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+  }
+  .footer__left .footer__logo p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+  .footer__left .footer__form {
+    display: block;
+    width: 100%;
+  }
+  .footer__right {
+    display: block !important;
   }
 }
 .modal_Menu {

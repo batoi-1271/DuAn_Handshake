@@ -22,7 +22,7 @@ userAction('manager')
     .then(data => {
         var htmls = data?.map((manager) => {
             return `
-            <div class="block-Manager">
+            <div class="block-Manager manager-${manager.id}">
             <div class="block-img">
                 <img src="${manager.avatar}" alt="">
             </div>
@@ -46,7 +46,7 @@ userAction('manager')
         `;
         });
         const accountManager = document.querySelector('.accountManager');
-        accountManager.innerHTML = htmls.join("");
+        accountManager.innerHTML = htmls.join(""); 
     })
     .catch(err => {
         console.log(">>> Check error: " + err.message)

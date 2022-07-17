@@ -32,9 +32,12 @@
             button{
                 height: 50px;
                 width: 25%;
-                border: 1px solid black;
                 border-radius: 30px;
                 font-size:18px;
+                background-color: #3a3b40;
+                color: white;
+                border: none;
+                cursor: pointer;
             }
         }
        
@@ -45,11 +48,17 @@
         .footer__contactUs{
             margin: 30px auto 0;
             .footer__contact{
+                margin-bottom: 20px;
                 h4{
                     color: gray;
                 }
-                margin-bottom: 20px;
             }
         }
+    }
+}
+.footer__copyright {
+    p {
+    padding-bottom: 20px !important;
+
     }
 }
